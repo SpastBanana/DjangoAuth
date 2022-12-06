@@ -33,6 +33,6 @@ __Congrats! The Auth system should be working from now on!__
 
 ## Updates
 
-| Update Nr. | Persoon | Datum | Opmerking |
+| Update | Person | Date | Info |
 | ----------- | ----------- | ----------- | ----------- |
 | 1.1 | Sebastiaan | 06-12-2022 | Build of the project |
