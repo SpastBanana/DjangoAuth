@@ -22,6 +22,7 @@ Making aditional code changes:
 - In your 'urls.py' on the same level of 'settings.py', add the following lines of code to include the correct functions:
 
 `from django.urls import path, include`
+
 `import Auth.urls`
 
 - And add this line of code to you urlpatterns in the same document:
