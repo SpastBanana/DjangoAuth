@@ -17,7 +17,15 @@ Move the folders like so:
 
 __Step three__
 
-In your 'settings.py' add 'Auth' to the list of installed apps
+Making aditional code changes:
+- In your 'settings.py' add `'Auth',` to the list of installed apps
+- In your 'urls.py' on the same level of 'settings.py', add this line of code to include the correct function:
+
+`from django.urls import path, include`
+
+- And add this line of code to you urlpatterns in the same document:
+
+`path('register', views.registerView, name='Register'),`
 
 __Step four__
 
@@ -36,3 +44,4 @@ __Congrats! The Auth system should be working from now on!__
 | Update | Person | Date | Info |
 | ----------- | ----------- | ----------- | ----------- |
 | 1.1 | Sebastiaan | 06-12-2022 | Build of the project |
+| 2.1 | Sebastiaan | 09-12-2022 | Added new features to make installing easyer |
