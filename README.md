@@ -19,13 +19,14 @@ __Step three__
 
 Making aditional code changes:
 - In your 'settings.py' add `'Auth',` to the list of installed apps
-- In your 'urls.py' on the same level of 'settings.py', add this line of code to include the correct function:
+- In your 'urls.py' on the same level of 'settings.py', add the following lines of code to include the correct functions:
 
 `from django.urls import path, include`
+`import Auth.urls`
 
 - And add this line of code to you urlpatterns in the same document:
 
-`path('register', views.registerView, name='Register'),`
+`path('auth/', include(Auth.urls)),`
 
 __Step four__
 
